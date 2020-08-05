@@ -2,8 +2,6 @@ import pandas as pd
 from sqlalchemy import create_engine
 from config import username, password
 
-print("hi there")
-
 engine = create_engine(f'postgresql://{username}:{password}@10.80.3.51:5432/epace')
 
 from sqlalchemy import inspect
@@ -29,9 +27,10 @@ def grab_table_as_dataframe(table_name):
 # Run Statements
 table_name = "job"
 
-return_column_names_from_table(table_name)
-
+#return_column_names_from_table(table_name)
 #grab_table_as_dataframe(table_name)
+#print(engine.table_names())
+
 
 
 
